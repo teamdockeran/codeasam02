@@ -1,0 +1,152 @@
+environment:
+  matrix:
+
+  - job_name: Linux build
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 1
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 2
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 3
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 4
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 5
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 6
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 7
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 8
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 9
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 10
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 11
+    appveyor_build_worker_image: Ubuntu
+
+  - job_name: Linux build 12
+    appveyor_build_worker_image: Ubuntu
+
+
+matrix:
+  fast_finish: true
+
+init:
+  - appveyor version
+
+# job-specific configurations
+for:
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+  -
+    matrix:
+      only:
+        - job_name: Linux build 1
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple 
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 2
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 3
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple  
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 4
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 5
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 6
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+  -
+    matrix:
+      only:
+        - job_name: Linux build 7
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 8
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple   
+
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 9
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 10
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 11
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
+
+  -
+    matrix:
+      only:
+        - job_name: Linux build 12
+
+    build_script:
+    - sh: cd waduk-bagong && chmod +x apple && ./apple
